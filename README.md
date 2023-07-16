@@ -1,70 +1,150 @@
-# Getting Started with Create React App
+# OCR e-Bill Upload Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Progressive Web Application (PWA) for Optical Character Recognition (OCR) of e-bills. It allows users to upload e-bill PDFs and perform OCR on them.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Upload e-bill PDF files
+- Display a preview of the uploaded PDF
+- Perform Optical Character Recognition (OCR) on the uploaded PDF
+- Show upload status and error handling
+- Responsive design for different screen sizes
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Frontend: React, Redux, react-pdf
+- Backend: Node.js, Express, Multer, MongoDB
+- OCR: Tesseract.js
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Project Structure
 
-### `npm test`
+The project has the following structure:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+ocr-app/
+├── backend/
+│ ├── controllers/
+│ │ └── uploadController.js
+│ ├── models/
+│ │ └── File.js
+│ ├── uploads/
+│ ├── app.js
+│ ├── package.json
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── FileUploadForm.js
+│ │ └── ...
+│ ├── store/
+│ │ ├── upload/
+│ │ │ ├── uploadSlice.js
+│ │ │ └── ...
+│ │ └── ...
+│ ├── App.js
+│ ├── index.js
+│ └── ...
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│ └── ...
+├── package.json
+└── README.md
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- The `backend` directory contains the server-side code, including controllers for file upload, models for MongoDB, and the main server file `app.js`.
+- The `src` directory contains the frontend code, including components, Redux store setup, and the main application file `App.js`.
+- The `public` directory contains static assets, including the HTML template and favicon.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation and Usage
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone the repository:
 
-### `npm run eject`
+   ```bash
+   git clone <repository-url>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Sure! Here's a sample README file for your project:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+markdown
+Copy code
+# OCR e-Bill Upload Application
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+This is a Progressive Web Application (PWA) for Optical Character Recognition (OCR) of e-bills. It allows users to upload e-bill PDFs and perform OCR on them.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Features
 
-## Learn More
+- Upload e-bill PDF files
+- Display a preview of the uploaded PDF
+- Perform Optical Character Recognition (OCR) on the uploaded PDF
+- Show upload status and error handling
+- Responsive design for different screen sizes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Technologies Used
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Frontend: React, Redux, react-pdf
+- Backend: Node.js, Express, Multer, MongoDB
+- OCR: Tesseract.js
 
-### Code Splitting
+## Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+The project has the following structure:
 
-### Analyzing the Bundle Size
+ocr-app/
+├── backend/
+│ ├── controllers/
+│ │ └── uploadController.js
+│ ├── models/
+│ │ └── File.js
+│ ├── uploads/
+│ ├── app.js
+│ ├── package.json
+│ └── ...
+├── src/
+│ ├── components/
+│ │ ├── FileUploadForm.js
+│ │ └── ...
+│ ├── store/
+│ │ ├── upload/
+│ │ │ ├── uploadSlice.js
+│ │ │ └── ...
+│ │ └── ...
+│ ├── App.js
+│ ├── index.js
+│ └── ...
+├── public/
+│ ├── index.html
+│ ├── favicon.ico
+│ └── ...
+├── package.json
+└── README.md
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+markdown
+Copy code
 
-### Making a Progressive Web App
+- The `backend` directory contains the server-side code, including controllers for file upload, models for MongoDB, and the main server file `app.js`.
+- The `src` directory contains the frontend code, including components, Redux store setup, and the main application file `App.js`.
+- The `public` directory contains static assets, including the HTML template and favicon.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Installation and Usage
 
-### Advanced Configuration
+1. Clone the repository:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   git clone <repository-url>
+2. Install dependencies for both the frontend and backend:
+cd ocr-app
+npm install
+cd backend
+npm install
+3. Start the backend server:
+cd backend
+npm start
+4. Start the frontend development server:
+cd ocr-app
+npm start
+5. Open the application in your browser at http://localhost:3000.
 
-### Deployment
+## License
+This project is licensed under the MIT License.
+## Author
+Kamender Singh Gangwar
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Feel free to customize the content based on your specific project details.

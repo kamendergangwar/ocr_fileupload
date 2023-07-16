@@ -58,13 +58,8 @@ ocr-app/
 
 1. Clone the repository:
 
-   ```bash
+   
    git clone <repository-url>
-
-Sure! Here's a sample README file for your project:
-
-markdown
-Copy code
 # OCR e-Bill Upload Application
 
 This is a Progressive Web Application (PWA) for Optical Character Recognition (OCR) of e-bills. It allows users to upload e-bill PDFs and perform OCR on them.
